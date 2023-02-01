@@ -16,11 +16,16 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    maxLength: 80
+    maxLength: 80,
   },
   dob: {
     type: Date,
     required: true,
+  },
+  gender: {
+    type: String,
+    required: true,
+    maxLength: 1,
   },
   profilePicPath: {
     type: String,
